@@ -3,7 +3,8 @@ const current = {
   'sketch-2': 1,
   'sketch-3': 1,
   'sketch-4': 1,
-  'critique': 1,
+  'critique-1': 1,
+  'critique-2': 1,
 }
 
 function select(name, number) {
@@ -16,7 +17,7 @@ function selectSketch(a, b) {
   select(`sketch-${a}`, b)
 }
 
-function selectCritique(n) {
-  select('critique', n)
+function selectCritique(a, n) {
+  select(`critique-${a}`, n)
 }
 

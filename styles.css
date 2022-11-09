@@ -201,7 +201,7 @@ ul {
     margin: 0;
 }
 
-.image-container > img {
+.image-container>img {
     width: 100%;
     height: auto;
     margin: 1rem 0;
@@ -317,11 +317,11 @@ ul {
     width: 100%;
 }
 
-.carousel > .item {
+.carousel>.item {
     display: none
 }
 
-.carousel > .item.first {
+.carousel>.item.first {
     display: flex;
 }
 
@@ -329,50 +329,73 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-bottom: 3vh;
 }
-  
+
 .button {
+    width: 4rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    border: 0.125rem solid var(--primary);
+    background-color: var(--light);
+    font-size: 1.5rem;
+
+    margin: 0 3vw;
+
+    box-shadow: 0.25rem 0.25rem 0.5rem var(--middle);
+    transition: all 0.5s ease;
+
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 40px;
-    border-radius: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 30px;
+    align-items: center;
+
+    color: var(--primary);
+
     cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primary);
+    color: var(--light);
+
+    box-shadow: 0.7rem 0.75rem 0.75rem var(--middle);
 }
 
 .sketch {
     width: 100%;
-    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sketch > img {
+.sketch>img {
     max-height: 100%;
     max-width: 100%;
+    padding: 3vh 0 4vh;
 }
 
 .critique {
     width: 100%;
     display: flex;
     align-items: flex-start;
+
+    margin-bottom: 2vh;
 }
 
-.critique > span.number {
+.critique>span.number {
     width: 300px;
     font-weight: 700;
     font-size: 300px;
     text-align: center;
+    color: var(--primary);
 }
 
-.critique > div {
+.critique>.full-width-text {
+    width: 100%;
+    margin: 3vh 0 2vh;
+}
+
+.critique>div {
     width: 450px;
     display: flex;
     flex-direction: column;
@@ -380,11 +403,6 @@ ul {
     margin-left: 30px;
 }
 
-.critique > div > div:nth-child(1) {
+.critique>div>div:nth-child(2) {
     height: 150px;
 }
-
-.critique > div > div:nth-child(2) {
-    height: 200px;
-}
-
